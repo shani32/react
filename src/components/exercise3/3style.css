@@ -1,0 +1,45 @@
+#root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.green {
+    width: 50vw;
+    height: 50vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blue {
+    width: 80%;
+    height: 80%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pink {
+    width: 80%;
+    height: 80%;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.purple {
+    width: 50%;
+    height: 50%;
+    background-color: purple;
+    margin-bottom: 5px;
+    
+}
+.purple2 {
+    width: 50%;
+    height: 50%;
+    background-color: purple;
+    margin-top: 5px;
+}
