@@ -1,21 +1,29 @@
 import React from "react";
-
 import './style.css';
 
-class ShowBox extends React.Component {
-    constructor(props){
-        super(props);
-        this.state={display:false}
+class BoxColor extends React.Component {
+    constructor(){
+        super();
+        this.state={
+            isYellow:false, 
+            text:false
+        };
+        
     }
+    
+    getToggle =()=>{
+        this.setState ({isYellow: !this.state.isYellow})
+    }
+    
     render() {
   return(
-      <div className="main">
-         <button onClick={()=>{console.log(this.state);this.setState({display:!this.state.display})}}>show</button>
-         {this.state.display?<div className="yellow-box"></div>:<></>}
+      <div >
+         <button onClick={this.getToggle}>{this.state.isYellow ? "hide" : "show"}</button>
+        {this.state.isYellow && (<div className="yellow" style={{backgroundColor:'yellow'}}></div>)}
          
       </div>
       );
   }
 }
 
-export default ShowBox;
+export default BoxColor;

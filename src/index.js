@@ -14,6 +14,12 @@ import ApprovalCard from './components/4.3/AprovalCard.jsx';
 import Counter from './components/7.1/counter.jsx';
 import ShowBox from './components/7.2/7.2.jsx';
 import Colors2 from './components/7.33/7.33.jsx';
+import BoxColor from './components/7.2/7.2.jsx';
+import LifeCycle from './components/8.1/8.1.jsx';
+import LifeBoxes from './components/8.2/8.2.jsx';
+import ChangeColor from './components/8.3/8.3.jsx';
+import Box5 from './components/8.333/8.333.jsx';
+
 
 //component
 const App= ()=>{
@@ -28,7 +34,13 @@ const App= ()=>{
      <Card2  title="sport" description="new player" link="one" href="http://one.com" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpNyAkvB7yWU-_rDRwn2sNyaZURoZDqXzS390t1ZDRrVXNRs2O"/>
     </ApprovalCard> */}
     {/* <Counter /> */}
-    <Colors2 />
+    {/* <Colors2 /> */}
+    {/* <BoxColor /> */}
+    {/* <LifeCycle /> */}
+    {/* <LifeBoxes /> */}
+    <ChangeColor />
+    {/* <Box5 /> */}
+    
       
     </div>
     )
