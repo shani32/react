@@ -1,0 +1,53 @@
+.number1 {
+    background: url("./dice-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .number2 {
+    background: url("./dice-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .number3 {
+    background: url("./dice-3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .number4 {
+    background: url("dice-4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .number5 {
+    background: url("./dice-5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .number6 {
+    background: url("./dice-6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #dice1,
+  #dice2 {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  #diceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-55vh);
+  }
+  .throwBtn{
+    display: flex;
+    margin: 0 auto;
+    transform: translateY(-50vh);
+  }
