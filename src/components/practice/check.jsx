@@ -6,7 +6,9 @@ class Check extends React.Component{
         this.state={
             isGoing:true,
             numberOfGuests:2,
-            isWorking: false
+            isWorking: false,
+            isVeggi:true,
+            isGlutenFree:true
         }
         this.handleChange=this.handleChange.bind(this)
     }
@@ -33,6 +35,22 @@ class Check extends React.Component{
                  type="checkbox" 
                  name="isWorking"
                  checked={this.state.isWorking}
+                 onChange={this.handleChange} />
+                </label>
+                <label >
+                    isVeggi:
+                <input
+                 type="checkbox" 
+                 name="isVeggi"
+                 checked={this.state.isVeggi}
+                 onChange={this.handleChange} />
+                </label>
+                <label >
+                    isGlutenFree:
+                <input
+                 type="checkbox" 
+                 name="isGlutenFree"
+                 checked={this.state.isGlutenFree}
                  onChange={this.handleChange} />
                 </label>
                 <label>
