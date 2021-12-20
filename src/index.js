@@ -29,6 +29,9 @@ import Main from './components/13/main';
 // import RandomUser from './components/api/api.jsx';
 // import RandomJoke from './components/12/12.1';
 // import ListRender from './components/13/data';
+// import ReactRandomJoke from './components/practice/joke';
+// import InputFocus from './components/14.1/14.1';
+import Clipboard from './components/14.2/14.2';
 
 //component
 const App= ()=>{
@@ -56,7 +59,10 @@ const App= ()=>{
     {/* <RandomUser /> */}
     {/* <RandomJoke /> */}
     {/* <ListRender /> */}
-    <Main />
+    {/* <Main /> */}
+    {/* <ReactRandomJoke /> */}
+    {/* <InputFocus /> */}
+    <Clipboard />
    
     
       
