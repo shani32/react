@@ -1,7 +1,8 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import Main from './components/13/main';
+// import App from '../React-main/src/App';
+// import Main from './components/13/main';
 // import RandomUser from './components/api/api.jsx';
 // import Data from './components/exeercise2/exercise2';
 // import Apple from './components/exercise3/exercise3.jsx';
@@ -31,10 +32,33 @@ import Main from './components/13/main';
 // import ListRender from './components/13/data';
 // import ReactRandomJoke from './components/practice/joke';
 // import InputFocus from './components/14.1/14.1';
-import Clipboard from './components/14.2/14.2';
+// import Clipboard from './components/14.2/14.2';
+// import FormUser from './components/practice/form';
+// import Accordion from './components/8.1/18.1/18.1';
+// import Text from './components/8.1/18.1/18.1';
+import Form from '../src/components/18.2'
+
+// const string = 'lorem fgdtrt fhfd fdy bjehishfser hgyegf hjgergfherbhj erhjfn rhjerf dhge'
+// const length=20
+
+   
+
 
 //component
 const App= ()=>{
+     const [todo, setTodos]=useState([])
+     const toggleComplete=i=>
+     setTodos(
+         todo.map(
+           (todo, current)=>
+           current===i?
+           {
+               ...todo,
+               complete: !todo.complete
+           }  
+           :todo
+         )
+     )
     return ( 
     <div>
      {/* <Container /> */}
@@ -62,17 +86,31 @@ const App= ()=>{
     {/* <Main /> */}
     {/* <ReactRandomJoke /> */}
     {/* <InputFocus /> */}
-    <Clipboard />
+    {/* <Clipboard /> */}
+    {/* <FormUser /> */}
+    {/* <Accordion items={items}/> */}
+    {/* <Text string={string} length={length}/> */}
+    <Form
+    onSubmit={text=>setTodos([{text, complete:false}, ...todo])}
+    />
+    <div>
+        {todo.map(({text, complete}, i)=>(
+        <div key={text} onClick={()=> toggleComplete(i)} 
+        style={{textDecoration: complete? "line-through":""}}>{text}</div>
+        
    
-    
-      
+   ))}
+    </div>  
     </div>
     )
 };
+
 ReactDOM.render(
     <App />,
     document.querySelector('#root')
 )
+
+
 if (module.hot) {
     module.hot.accept();
 }
