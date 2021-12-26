@@ -23,7 +23,6 @@ import ReactDOM from 'react-dom';
 // import ChangeColor from './components/8.3/8.3.jsx';
 // import Box5 from './components/8.333/8.333.jsx';
 // import InputChange from './components/practice/practice.jsx';
-
 // import Check from './components/practice/check.jsx';
 // import ValidForms from './components/practice/formValidate.jsx';
 // import Game from './dice/game';
@@ -36,8 +35,9 @@ import ReactDOM from 'react-dom';
 // import FormUser from './components/practice/form';
 // import Accordion from './components/8.1/18.1/18.1';
 // import Text from './components/8.1/18.1/18.1';
-import Form from '../src/components/18.2'
-
+// import Form from '../src/components/18.2'
+import Clock from './components/18.3/18.3'
+  
 // const string = 'lorem fgdtrt fhfd fdy bjehishfser hgyegf hjgergfherbhj erhjfn rhjerf dhge'
 // const length=20
 
@@ -90,7 +90,8 @@ const App= ()=>{
     {/* <FormUser /> */}
     {/* <Accordion items={items}/> */}
     {/* <Text string={string} length={length}/> */}
-    <Form
+    <Clock/>
+    {/* <Form
     onSubmit={text=>setTodos([{text, complete:false}, ...todo])}
     />
     <div>
@@ -99,9 +100,10 @@ const App= ()=>{
         style={{textDecoration: complete? "line-through":""}}>{text}</div>
         
    
-   ))}
-    </div>  
-    </div>
+   ))} */}
+    {/* { </div>   */}
+    </div> 
+// }
     )
 };
 
