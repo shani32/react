@@ -36,7 +36,12 @@ import ReactDOM from 'react-dom';
 // import Accordion from './components/8.1/18.1/18.1';
 // import Text from './components/8.1/18.1/18.1';
 // import Form from '../src/components/18.2'
-import Clock from './components/18.3/18.3'
+// import Clock from './components/18.3/18.3'
+// import SearchFetch from './fetchHooks/fetch';
+// import DataFetched from './fetchHooks/data';
+// import Countries from './fetchHooks/fetchCountries/fetchCountries';
+// import SearchFetch from './fetchHooks/fetch';
+import AlogoliaAPI from './components/alogoliaAPI/alogoliaAPI';
   
 // const string = 'lorem fgdtrt fhfd fdy bjehishfser hgyegf hjgergfherbhj erhjfn rhjerf dhge'
 // const length=20
@@ -46,19 +51,19 @@ import Clock from './components/18.3/18.3'
 
 //component
 const App= ()=>{
-     const [todo, setTodos]=useState([])
-     const toggleComplete=i=>
-     setTodos(
-         todo.map(
-           (todo, current)=>
-           current===i?
-           {
-               ...todo,
-               complete: !todo.complete
-           }  
-           :todo
-         )
-     )
+    //  const [todo, setTodos]=useState([])
+    //  const toggleComplete=i=>
+    //  setTodos(
+    //      todo.map(
+    //        (todo, current)=>
+    //        current===i?
+    //        {
+    //            ...todo,
+    //            complete: !todo.complete
+    //        }  
+    //        :todo
+    //      )
+    //  )
     return ( 
     <div>
      {/* <Container /> */}
@@ -90,8 +95,12 @@ const App= ()=>{
     {/* <FormUser /> */}
     {/* <Accordion items={items}/> */}
     {/* <Text string={string} length={length}/> */}
-    <Clock/>
+    {/* <Clock/> */}
+    {/* <Countries/> */}
+    {/* <SearchFetch/> */}
+    <AlogoliaAPI/>
     {/* <Form
+    
     onSubmit={text=>setTodos([{text, complete:false}, ...todo])}
     />
     <div>
@@ -102,6 +111,7 @@ const App= ()=>{
    
    ))} */}
     {/* { </div>   */}
+    {/* <SearchFetch/> */}
     </div> 
 // }
     )
