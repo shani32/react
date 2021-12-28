@@ -1,6 +1,7 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
+import { Video } from './components/21.2/21.2';
 // import App from '../React-main/src/App';
 // import Main from './components/13/main';
 // import RandomUser from './components/api/api.jsx';
@@ -41,7 +42,11 @@ import ReactDOM from 'react-dom';
 // import DataFetched from './fetchHooks/data';
 // import Countries from './fetchHooks/fetchCountries/fetchCountries';
 // import SearchFetch from './fetchHooks/fetch';
-import AlogoliaAPI from './components/alogoliaAPI/alogoliaAPI';
+// import AlogoliaAPI from './components/alogoliaAPI/alogoliaAPI';
+// import VideoPlayer from './components/21.2/21.2';
+// import Ref from './components/21.1/21.1';
+// import { Cancel } from './components/20.1/20.1';
+import  VideoRef  from './components/21.2/21.2';
   
 // const string = 'lorem fgdtrt fhfd fdy bjehishfser hgyegf hjgergfherbhj erhjfn rhjerf dhge'
 // const length=20
@@ -98,8 +103,13 @@ const App= ()=>{
     {/* <Clock/> */}
     {/* <Countries/> */}
     {/* <SearchFetch/> */}
-    <AlogoliaAPI/>
+    {/* <AlogoliaAPI/> */}
+    {/* <VideoPlayer/> */}
+    {/* <Ref/> */}
+    {/* <Cancel/> */}
+    <VideoRef/>
     {/* <Form
+
     
     onSubmit={text=>setTodos([{text, complete:false}, ...todo])}
     />
