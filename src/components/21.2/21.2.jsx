@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 
+
 export default function VideoRef() {
     const vidRef = useRef();
     const handlePlayVideo = () => {

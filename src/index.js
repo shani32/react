@@ -46,7 +46,8 @@ import { Video } from './components/21.2/21.2';
 // import VideoPlayer from './components/21.2/21.2';
 // import Ref from './components/21.1/21.1';
 // import { Cancel } from './components/20.1/20.1';
-import  VideoRef  from './components/21.2/21.2';
+// import  VideoRef  from './components/21.2/21.2';
+import { TogglePictures } from './components/21.3/21.3';
   
 // const string = 'lorem fgdtrt fhfd fdy bjehishfser hgyegf hjgergfherbhj erhjfn rhjerf dhge'
 // const length=20
@@ -107,7 +108,8 @@ const App= ()=>{
     {/* <VideoPlayer/> */}
     {/* <Ref/> */}
     {/* <Cancel/> */}
-    <VideoRef/>
+    {/* <VideoRef/> */}
+    <TogglePictures/>
     {/* <Form
 
     
