@@ -1,4 +1,5 @@
 const fs= require ('fs')
+const { argv } = require('process')
 const yargs= require ('yargs')
 const notes= require ('./notes/notes.js')
 yargs.command({
@@ -22,6 +23,21 @@ yargs.command({
     }
     
 })
+yargs.command({
+    command:'remove', 
+    describe: 'remove a note',
+    builder:{
+        title:{
+            describe:'note title',
+            demandOption: true,
+            type:'string'        
+        }
+    },
+    handler: function(argv){
+        notes.removeNote(argv.title)
+    }
+})
+yargs.argv;
 
 // const dataBuffer=fs.readFileSync('1-json.json')
 // const datajson= dataBuffer.toString()
